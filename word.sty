@@ -1,0 +1,35 @@
+\usepackage{luatexja-fontspec}
+\setmainfont[
+	Ligatures          = TeX,
+	BoldFont           = Times New Roman Bold,
+	ItalicFont         = Times New Roman Italic,
+	BoldItalicFont     = Times New Roman Bold Italic
+]{Times New Roman}
+\setsansfont{Arial}
+\setmainjfont[
+	Ligatures          = TeX,
+	BoldFont           = MS Gothic,
+	BoldFeatures       = {FakeBold=2},
+	ItalicFont         = MS Mincho,
+	ItalicFeatures     = {FakeSlant=0.33},
+	BoldItalicFont     = MS Gothic,
+	BoldItalicFeatures = {FakeBold=2},
+	BoldItalicFeatures = {FakeSlant=0.33}
+]{MS Mincho}
+\setsansjfont{MS Gothic}
+\usepackage{unicode-math}
+\setmathfont{Cambria Math}
+
+\newlength{\pt}
+\setlength{\pt}{1.00375truept}
+
+\renewcommand\tiny{\@setfontsize\tiny{5\pt}{6\pt}}
+\renewcommand\scriptsize{\@setfontsize\scriptsize{7\pt}{8\pt}}
+\renewcommand\footnotesize{\@setfontsize\footnotesize{8\pt}{10\pt}}
+\renewcommand\small{\@setfontsize\small{9\pt}{12\pt}}
+\renewcommand\normalsize{\@setfontsize\normalsize{10\pt}{15\pt}}
+\renewcommand\large{\@setfontsize\large{12\pt}{15\pt}}
+\renewcommand\Large{\@setfontsize\Large{14.4\pt}{16\pt}}
+\renewcommand\LARGE{\@setfontsize\LARGE{17.28\pt}{18\pt}}
+\renewcommand\huge{\@setfontsize\huge{20.74\pt}{30\pt}}
+\renewcommand\Huge{\@setfontsize\Huge{24.88\pt}{36\pt}}
