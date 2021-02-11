@@ -1,32 +1,36 @@
 \usepackage{luatexja-fontspec}
-\setmainfont[
-	Ligatures          = {Rare, TeX},
-	BoldFont           = Times New Roman Bold,
-	ItalicFont         = Times New Roman Italic,
-	BoldItalicFont     = Times New Roman Bold Italic
-]{Times New Roman}
+\setmainfont[Ligatures={Rare,TeX}]{Times-New-Roman}
 \setsansfont{Arial}
 \setmainjfont[
-	Ligatures          = TeX,
-	Scale              = MatchLowercase,
-	BoldFont           = MS Gothic,
+	YokoFeatures       = {JFM=jlreq},
+	TateFeatures       = {JFM=jlreqv},
+	BoldFont           = MS-Gothic,
 	BoldFeatures       = {FakeBold=2},
-	ItalicFont         = MS Mincho,
+	ItalicFont         = MS-Mincho,
 	ItalicFeatures     = {FakeSlant=0.33},
-	BoldItalicFont     = MS Gothic,
+	BoldItalicFont     = MS-Gothic,
 	BoldItalicFeatures = {FakeBold=2, FakeSlant=0.33}
-]{MS Mincho}
-\setsansjfont{MS Gothic}
+]{MS-Mincho}
+\setsansjfont[
+	YokoFeatures       = {JFM=jlreq},
+	TateFeatures       = {JFM=jlreqv},
+	BoldFont           = MS-Gothic,
+	BoldFeatures       = {FakeBold=2},
+	ItalicFont         = MS-Gothic,
+	ItalicFeatures     = {FakeSlant=0.33},
+	BoldItalicFont     = MS-Gothic,
+	BoldItalicFeatures = {FakeBold=2, FakeSlant=0.33}
+]{MS-Gothic}
 \usepackage{unicode-math}
-\setmathfont{Cambria Math}
+\setmathfont{Cambria-Math}
 
-\renewcommand\tiny{\@setfontsize\tiny{5bp}{6bp}}
-\renewcommand\scriptsize{\@setfontsize\scriptsize{7bp}{8bp}}
-\renewcommand\footnotesize{\@setfontsize\footnotesize{8bp}{10bp}}
-\renewcommand\small{\@setfontsize\small{9bp}{12bp}}
-\renewcommand\normalsize{\@setfontsize\normalsize{10bp}{15bp}}
-\renewcommand\large{\@setfontsize\large{12bp}{15bp}}
-\renewcommand\Large{\@setfontsize\Large{14.4bp}{16bp}}
-\renewcommand\LARGE{\@setfontsize\LARGE{17.28bp}{18bp}}
-\renewcommand\huge{\@setfontsize\huge{20.74bp}{30bp}}
-\renewcommand\Huge{\@setfontsize\Huge{24.88bp}{36bp}}
+%\renewcommand\tiny{\@setfontsize\tiny{5bp}{6bp}}
+%\renewcommand\scriptsize{\@setfontsize\scriptsize{7bp}{8bp}}
+%\renewcommand\footnotesize{\@setfontsize\footnotesize{8bp}{10bp}}
+%\renewcommand\small{\@setfontsize\small{9bp}{12bp}}
+%\renewcommand\normalsize{\@setfontsize\normalsize{10bp}{15bp}}
+%\renewcommand\large{\@setfontsize\large{12bp}{15bp}}
+%\renewcommand\Large{\@setfontsize\Large{14.4bp}{16bp}}
+%\renewcommand\LARGE{\@setfontsize\LARGE{17.28bp}{18bp}}
+%\renewcommand\huge{\@setfontsize\huge{20.74bp}{30bp}}
+%\renewcommand\Huge{\@setfontsize\Huge{24.88bp}{36bp}}
